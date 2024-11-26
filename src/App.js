@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { CandoCard } from './components/cando/CandoCard';
 import { ServiceCard } from './components/dentalServices/ServiceCard';
 import { TestimonialCard } from './components/testimonials/TestimonialCard';
+import { OpenHrs } from './components/OpenHrs';
 function App() {
   useEffect(() => {
     document.title = "Somerville Dental"; // Set the page title here
@@ -20,6 +21,7 @@ function App() {
       <CandoCard />
       <ServiceCard />
       <TestimonialCard />
+      <OpenHrs />
       <Footer />
     </>
   );
