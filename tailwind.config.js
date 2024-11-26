@@ -1,3 +1,4 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
+        elmessiri: ['El Messiri', 'sans-serif'], // Add this line
       },
     },
   },

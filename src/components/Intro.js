@@ -1,35 +1,60 @@
 import React from 'react'
+import smileGirl from './../assets/images/smileGirl.png'
 
 export const Intro = () => {
   return (
-    <>
-      <div className="w-full h-96 px-20 flex-col justify-center items-center gap-2.5 inline-flex">
-        <div className="self-stretch grow shrink basis-0 justify-start items-start gap-6 inline-flex">
-          <div className="grow shrink basis-0 pt-20 flex-col justify-start items-start gap-12 inline-flex">
-            <div className="self-stretch h-80 flex-col justify-start items-start gap-7 flex">
-              <div className="self-stretch h-52 flex-col justify-start items-start gap-7 flex">
-                <div className="w-60 h-4 text-[#0d4e6e] text-lg font-semibold font-['Nunito'] leading-loose tracking-wide">Quality Dental Health Is</div>
-                <div className="self-stretch text-[#090909] text-6xl font-normal font-['El Messiri'] leading-10">Comfortable And<br />Traditional General<br />And Cosmetic Dentistry</div>
+    <section id="home">
+      <div className="w-full bg-white">
+        {/* Main container with max width */}
+        <div className="w-full max-w-[1440px] mx-auto px-4 md:px-4">
+          {/* Content wrapper */}
+          <div className="w-full flex flex-col md:flex-row gap-8 md:gap-12 py-4 md:py-8">
+            {/* Left content container */}
+            <div className="w-full md:w-1/2 flex flex-col items-start gap-6 justify-center">
+              {/* Text content group */}
+              <div className="flex flex-col gap-6">
+                <h3 className="text-[#0d4e6e] text-lg font-semibold font-nunito leading-loose tracking-wide">
+                  Quality Dental Health Is
+                </h3>
+                <h1 className="text-[#090909] text-4xl md:text-6xl font-normal font-elmessiri leading-tight">
+                  Comfortable And Traditional General And Cosmetic Dentistry
+                </h1>
               </div>
-              <div className="w-96 text-[#363636] text-xl font-normal font-['Nunito'] leading-loose">At Somerville Dental Associates, our dental staff strives to make your experience as comfortable as possible to ensure you get the quality dental care you require.</div>
+
+              {/* Description text */}
+              <p className="text-[#363636] text-lg md:text-xl font-normal font-nunito leading-relaxed">
+                At Somerville Dental Associates, our dental staff strives
+                <br />
+                to make your experience
+                as comfortable as possible to
+                <br />
+                ensure you get the quality dental care you require.
+              </p>
+
+              {/* Button group */}
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 w-full sm:w-auto">
+                <button className="px-7 py-3.5 bg-[#0d4e6e] rounded-lg text-white text-base font-semibold font-nunito hover:bg-[#0a3d57] transition-colors">
+                  Plan Your Visit
+                </button>
+                <button className="px-7 py-3.5 rounded-lg border border-[#0d4e6e] text-[#0d4e6e] text-base font-semibold font-nunito hover:bg-[#f5f5f5] transition-colors">
+                  Check Our Services
+                </button>
+              </div>
             </div>
-            <div className="justify-start items-start gap-7 inline-flex">
-              <div className="px-7 py-3.5 bg-[#0d4e6e] rounded-lg justify-center items-center gap-2.5 flex">
-                <div className="text-white text-base font-semibold font-['Nunito']">Plan Your Visit</div>
-              </div>
-              <div className="px-7 py-3.5 rounded-lg border border-[#0d4e6e] justify-center items-center gap-2.5 flex">
-                <div className="text-[#0d4e6e] text-base font-semibold font-['Nunito']">Check Our Services</div>
+
+            {/* Right image container */}
+            <div className="w-full md:w-1/2">
+              <div className="w-full h-0 pt-[100%] relative overflow-hidden">
+                <img
+                  src={smileGirl}
+                  alt="Dental Care"
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                />
               </div>
             </div>
-          </div>
-          <div className="w-96 self-stretch relative">
-            <div className="w-96 h-96 left-0 top-0 absolute bg-[#d9d9d9]" />
-            <img className="w-96 h-96 left-[-5.35px] top-[-11.57px] absolute" src="../assets/images/smileGirl.png" alt="Smiling girl" />
           </div>
         </div>
       </div>
-
-
-    </>
-  )
-}
+    </section>
+  );
+};
