@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "John M.",
+    "review": "Dr Shick is the best! He's handsdown the most efficient dentist I've ever had and he does a really good job with cleanings. He's also no BS; doesn't try to talk you into unnecessary crazy(expensive) treatments. He's a total straight shooter."
+  },
+  {
+    "id": 2,
+    "name": "Dianna M.",
+    "review": "Dr. Paul Shick at Somerville Dental Associates is my dentist! Dr. Shick is very knowledgeable and an up to date dentist. I personally find him to be very concerned for his patient's comfort when he is doing a procedure and he and his office staff are very caring about their patients."
+  },
+  {
+    "id": 3,
+    "name": "Scott M.",
+    "review": "I've been seeing Dr. Shick for probably around 10 years now and he's seen me through half a dozen fillings, two crowns, and a cracked tooth. All of them turned out excellent and I've had no problems with any of his work."
+  }
+]
