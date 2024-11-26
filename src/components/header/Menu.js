@@ -14,7 +14,7 @@ export const Menu = () => {
   return (
     <div className="w-full">
       <div className="max-w-[1440px] mx-auto">
-        <div className="md:px-4 py-4 flex flex-col justify-start items-start">
+        <div className="md:px-4 py-6 flex flex-col justify-start items-start">
           <div className="w-full flex justify-between items-center">
             <div className="flex items-center gap-4 md:gap-8">
               <div className="text-2xl md:text-3xl">

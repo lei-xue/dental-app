@@ -2,6 +2,6 @@ import React from 'react'
 
 export const CandoCard = () => {
   return (
-    <div>CandoCard</div>
+    <div className="text-lg text-center">What can we do ?</div>
   )
 }

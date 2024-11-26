@@ -8,7 +8,7 @@ export const Intro = () => {
         {/* Main container with max width */}
         <div className="w-full max-w-[1440px] mx-auto px-4 md:px-4">
           {/* Content wrapper */}
-          <div className="w-full flex flex-col md:flex-row gap-8 md:gap-12 py-4 md:py-8">
+          <div className="w-full flex flex-col md:flex-row gap-8 md:gap-12 py-4 md:py-6">
             {/* Left content container */}
             <div className="w-full md:w-1/2 flex flex-col items-start gap-6 justify-center">
               {/* Text content group */}
