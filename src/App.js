@@ -5,7 +5,7 @@ import { Intro } from './components/Intro';
 import { Mission } from './components/Mission';
 import { useEffect } from 'react';
 import { CandoCard } from './components/cando/CandoCard';
-import { ServiceCard } from './components/dentalServices/ServiceCard';
+import { Service } from './components/Service';
 import { TestimonialCard } from './components/testimonials/TestimonialCard';
 import { OpenHrs } from './components/OpenHrs';
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Intro />
       <Mission />
       <CandoCard />
-      <ServiceCard />
+      <Service />
       <TestimonialCard />
       <OpenHrs />
       <Footer />

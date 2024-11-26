@@ -11,15 +11,15 @@ export const Mission = () => {
             {/* Mission Text Section */}
             <div className="mb-12 md:mb-20">
               <div className="text-center mb-7">
-                <div className="text-[#0d4e6e] text-sm font-semibold font-['Nunito'] tracking-wide mb-5">
+                <div className="text-[#0d4e6e] text-sm font-semibold font-nunito tracking-wide mb-5">
                   ABOUT US
                 </div>
-                <div className="text-[#090909] text-4xl md:text-5xl font-normal font-['Messiri'] leading-10 mb-7">
+                <div className="text-[#090909] text-4xl md:text-5xl font-normal font-elmessiri leading-10 mb-7">
                   Our Mission
                 </div>
               </div>
 
-              <div className="space-y-6 text-[#363636] text-base md:text-lg font-normal font-['Nunito']">
+              <div className="space-y-6 text-[#363636] text-base md:text-lg font-normal font-nunito">
                 <p className="text-center">
                   Going to the dentist can be an amazing experience when you choose a dental office that takes the patients' comfort into consideration. We are a traditional general and cosmetic dental office, who can provide you with all the dental care you require to keep your smile healthy and beautiful.
                 </p>
