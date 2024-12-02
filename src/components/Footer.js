@@ -1,6 +1,15 @@
 import React from 'react'
 
 export const Footer = () => {
+
+  const handleScrollToSection = (event, sectionId) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="w-full bg-[#0d4e6e]">
       <div className="max-w-[1440px] mx-auto">
@@ -45,9 +54,13 @@ export const Footer = () => {
               <div className="w-full sm:w-[322px] flex flex-col gap-4">
                 <div className="text-white text-base font-bold font-nunito">Links</div>
                 <div className="flex flex-col">
-                  {['Home', 'About', 'Service', 'Doctors', 'Testimonials'].map((link) => (
+                  {['Home', 'About', 'Service', 'Doctors', 'Testimonials'].map((link, index) => (
                     <div key={link} className="py-2">
-                      <div className="text-white text-base font-normal font-nunito">{link}</div>
+                      <a href={`#${link.toLowerCase()}`}
+                        onClick={(e) => handleScrollToSection(e, link.toLowerCase())}
+                        className="text-white text-base font-normal font-nunito">
+                        {link}
+                      </a>
                     </div>
                   ))}
                 </div>

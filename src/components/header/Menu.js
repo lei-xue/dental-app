@@ -27,31 +27,32 @@ export const Menu = () => {
               <div className="hidden md:flex items-center gap-6">
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="text-center text-[#363636] text-base font-normal font-['Nunito'] leading-relaxed hover:text-[#0d4e6e]"
+                  className="text-center text-[#363636] text-base font-normal font-nunito leading-relaxed hover:text-[#0d4e6e]"
                 >
                   Home
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-center text-[#363636] text-base font-normal font-['Nunito'] leading-relaxed hover:text-[#0d4e6e]"
+                  className="text-center text-[#363636] text-base font-normal font-nunito
+                  leading-relaxed hover:text-[#0d4e6e]"
                 >
                   About Us
                 </button>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="text-center text-[#363636] text-base font-normal font-['Nunito'] leading-relaxed hover:text-[#0d4e6e]"
+                  className="text-center text-[#363636] text-base font-normal font-nunito leading-relaxed hover:text-[#0d4e6e]"
                 >
                   Services
                 </button>
                 <button
                   onClick={() => scrollToSection('testimonials')}
-                  className="text-center text-[#363636] text-base font-normal font-['Nunito'] leading-relaxed hover:text-[#0d4e6e]"
+                  className="text-center text-[#363636] text-base font-normal font-nunito leading-relaxed hover:text-[#0d4e6e]"
                 >
                   Testimonials
                 </button>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="text-center text-[#363636] text-base font-normal font-['Nunito'] leading-relaxed hover:text-[#0d4e6e]"
+                  className="text-center text-[#363636] text-base font-normal font-nunito leading-relaxed hover:text-[#0d4e6e]"
                 >
                   Contact Us
                 </button>
@@ -63,7 +64,7 @@ export const Menu = () => {
                 onClick={() => scrollToSection('contact')}
                 className="hidden md:flex px-6 py-3 bg-[#0d4e6e] rounded-xl items-center gap-2.5 hover:bg-[#0a3d57] transition-colors"
               >
-                <span className="text-white text-base font-medium font-['Nunito'] leading-none">
+                <span className="text-white text-base font-medium font-nunito  leading-none">
                   Plan Your Visit !
                 </span>
                 <i className="bi bi-arrow-right text-white"></i>
@@ -83,31 +84,31 @@ export const Menu = () => {
               <nav className="flex flex-col gap-4">
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="text-left text-[#363636] text-base font-['Nunito'] hover:text-[#0d4e6e]"
+                  className="text-left text-[#363636] text-base font-nunito hover:text-[#0d4e6e]"
                 >
                   Home
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-left text-[#363636] text-base font-['Nunito'] hover:text-[#0d4e6e]"
+                  className="text-left text-[#363636] text-base font-nunito hover:text-[#0d4e6e]"
                 >
                   About Us
                 </button>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="text-left text-[#363636] text-base font-['Nunito'] hover:text-[#0d4e6e]"
+                  className="text-left text-[#363636] text-base font-nunito hover:text-[#0d4e6e]"
                 >
                   Services
                 </button>
                 <button
                   onClick={() => scrollToSection('testimonials')}
-                  className="text-left text-[#363636] text-base font-['Nunito'] hover:text-[#0d4e6e]"
+                  className="text-left text-[#363636] text-base font-nunito hover:text-[#0d4e6e]"
                 >
                   Testimonials
                 </button>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="text-left text-[#363636] text-base font-['Nunito'] hover:text-[#0d4e6e]"
+                  className="text-left text-[#363636] text-base font-nunito hover:text-[#0d4e6e]"
                 >
                   Contact Us
                 </button>
@@ -115,7 +116,7 @@ export const Menu = () => {
                   onClick={() => scrollToSection('contact')}
                   className="w-full px-6 py-3 bg-[#0d4e6e] rounded-xl flex items-center justify-center gap-2.5 hover:bg-[#0a3d57] transition-colors"
                 >
-                  <span className="text-white text-base font-medium font-['Nunito'] leading-none">
+                  <span className="text-white text-base font-medium font-nunito leading-none">
                     Plan Your Visit !
                   </span>
                   <i className="bi bi-arrow-right text-white"></i>

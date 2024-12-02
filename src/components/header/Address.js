@@ -13,7 +13,7 @@ export const Address = () => {
               {/* Address */}
               <div className="flex justify-start items-center gap-3">
                 <i className="bi bi-geo-alt text-white text-lg"></i>
-                <div className="text-white text-sm font-normal font-[Nunito] leading-[22.4px] break-words">
+                <div className="text-white text-sm font-normal font-nunito leading-[22.4px] break-words">
                   3 Ashland Street Medford, MA 02155
                 </div>
               </div>
@@ -23,7 +23,7 @@ export const Address = () => {
                 {/* Tel*/}
                 <div className="flex justify-start items-center gap-3">
                   <i className="bi bi-telephone text-white text-md"></i>
-                  <div className="text-white text-sm font-normal font-[Nunito] leading-[22.4px] break-words">
+                  <div className="text-white text-sm font-normal font-nunito leading-[22.4px] break-words">
                     (+1) (781)-(874)-(1630)
                   </div>
                 </div>
@@ -34,7 +34,7 @@ export const Address = () => {
                 {/* Email */}
                 <div className="flex justify-start items-center gap-3">
                   <i className="bi bi-envelope text-white text-md"></i>
-                  <div className="text-white text-sm font-normal font-[Nunito] leading-[22.4px] break-words">
+                  <div className="text-white text-sm font-normal font-nunito leading-[22.4px] break-words">
                     somervilledental@verzion.net
                   </div>
                 </div>
