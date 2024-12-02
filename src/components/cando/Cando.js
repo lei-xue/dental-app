@@ -37,7 +37,7 @@ export const Cando = () => {
                 <div className="text-[#090909] text-4xl md:text-5xl font-normal font-elmessiri leading-10 mb-7">
                   What Can We Do?
                 </div>
-                <p className="text-[#363636] text-lg md:text-2xl font-normal font-nunito max-w-3xl mx-auto">
+                <p className="text-[#363636] text-lg md:text-2xl font-normal font-nunito max-w-3xl mx-auto mb-8">
                   Contact us for more details and specifications. Don't see what you're looking for? Just ask us!
                 </p>
               </div>

@@ -45,7 +45,8 @@ export const Testimonial = () => {
                   Want to see more testimonials? Check out our Yelp page here where you can view more about what others had to say about us.
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-6">
+              <br />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 {currentPageData.map((testimonial) => (
                   <TestimonialCard
                     key={testimonial.id}
