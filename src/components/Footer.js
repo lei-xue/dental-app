@@ -54,7 +54,7 @@ export const Footer = () => {
               <div className="w-full sm:w-[322px] flex flex-col gap-4">
                 <div className="text-white text-base font-bold font-nunito">Links</div>
                 <div className="flex flex-col">
-                  {['Home', 'About', 'Service', 'Doctors', 'Testimonials'].map((link, index) => (
+                  {['Home', 'About', 'Services', 'Doctors', 'Testimonials'].map((link, index) => (
                     <div key={link} className="py-2">
                       <a href={`#${link.toLowerCase()}`}
                         onClick={(e) => handleScrollToSection(e, link.toLowerCase())}

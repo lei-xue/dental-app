@@ -16,32 +16,24 @@ function App() {
     document.title = "Somerville Dental"; // Set the page title here
   }, []); // Empty dependency array ensures it runs only once
 
+  const components = [
+    <Header />,
+    <Intro />,
+    <Mission />,
+    <Cando />,
+    <Service />,
+    <Testimonial />,
+    <OpenHrs />,
+    <Footer />
+  ];
+
   return (
     <>
-      <FadeInComponent>
-        <Header />
-      </FadeInComponent>
-      <FadeInComponent>
-        <Intro />
-      </FadeInComponent>
-      <FadeInComponent>
-        <Mission />
-      </FadeInComponent>
-      <FadeInComponent >
-        <Cando />
-      </FadeInComponent>
-      <FadeInComponent >
-        <Service />
-      </FadeInComponent>
-      <FadeInComponent>
-        <Testimonial />
-      </FadeInComponent>
-      <FadeInComponent>
-        <OpenHrs />
-      </FadeInComponent>
-      <FadeInComponent >
-        <Footer />
-      </FadeInComponent>
+      {components.map((component, index) => (
+        <FadeInComponent key={index}>
+          {component}
+        </FadeInComponent>
+      ))}
     </>
   );
 }
