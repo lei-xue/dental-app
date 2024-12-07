@@ -2,6 +2,13 @@ import React from 'react'
 import smileGirl from './../assets/images/smileGirl.png'
 
 export const Intro = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home">
       <div className="w-full bg-white">
@@ -36,7 +43,7 @@ export const Intro = () => {
                 <button className="px-7 py-3.5 bg-[#0d4e6e] rounded-lg text-white text-base font-semibold font-nunito hover:bg-[#0a3d57] transition-colors">
                   Plan Your Visit
                 </button>
-                <button className="px-7 py-3.5 rounded-lg border border-[#0d4e6e] text-[#0d4e6e] text-base font-semibold font-nunito hover:bg-[#f5f5f5] transition-colors">
+                <button onClick={() => scrollToSection('contact')} className="px-7 py-3.5 rounded-lg border border-[#0d4e6e] text-[#0d4e6e] text-base font-semibold font-nunito hover:bg-[#f5f5f5] transition-colors">
                   Check Our Services
                 </button>
               </div>

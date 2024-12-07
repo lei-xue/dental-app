@@ -13,8 +13,8 @@ import FadeInComponent from './components/FadeInComponent';
 
 function App() {
   useEffect(() => {
-    document.title = "Somerville Dental"; // Set the page title here
-  }, []); // Empty dependency array ensures it runs only once
+    document.title = "Somerville Dental";
+  }, []);
 
   const components = [
     <Header />,
