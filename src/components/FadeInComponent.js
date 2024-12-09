@@ -11,7 +11,8 @@ const FadeInComponent = ({ children, delay = 50 }) => {
           setTimeout(() => {
             setIsVisible(true);
           }, delay);
-          observer.unobserve(domRef.current);
+        } else {
+          setIsVisible(false);
         }
       });
     });

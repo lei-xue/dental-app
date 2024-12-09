@@ -7,6 +7,7 @@ import denture from '../../assets/images/denture.svg';
 import implant from '../../assets/images/implant.svg';
 import emergency from '../../assets/images/emergency.svg';
 import toothHygiene from '../../assets/images/tooth-hygiene.svg';
+import FadeInComponent from './../FadeInComponent';
 
 const images = {
   'dental-floss.svg': dentalFloss,
@@ -34,7 +35,7 @@ export const Cando = () => {
                 <div className="text-[#0d4e6e] text-md font-semibold font-nunito tracking-wide mb-5">
                   Most Insurances Accepted
                 </div>
-                <div className="text-[#090909] text-4xl md:text-5xl font-normal font-elmessiri leading-10 mb-7">
+                <div className="text-[#090909] text-4xl md:text-5xl font-normal font-elmessiri leading-10 mb-7 animate-pulse">
                   What Can We Do?
                 </div>
                 <p className="text-[#363636] text-lg md:text-2xl font-normal font-nunito max-w-3xl mx-auto mb-8">
@@ -42,8 +43,10 @@ export const Cando = () => {
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {data.map(item => (
-                  <CandoCard key={item.id} picture={item.picture} title={item.title} details={item.details} />
+                {data.map((item, index) => (
+                  <FadeInComponent key={item.id} delay={index * 200}>
+                    <CandoCard picture={item.picture} title={item.title} details={item.details} />
+                  </FadeInComponent>
                 ))}
               </div>
             </div>

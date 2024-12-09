@@ -1,5 +1,7 @@
-import React from 'react'
-import brightTeeth from './../assets/images/brightTeeth.png'
+import React from 'react';
+import brightTeeth from './../assets/images/brightTeeth.png';
+import FadeInComponent from './FadeInComponent';
+
 export const OpenHrs = () => {
   return (
     <section id="contact">
@@ -11,7 +13,7 @@ export const OpenHrs = () => {
               <div className="space-y-6">
                 {/* Title */}
                 <div className="text-white text-2xl md:text-4xl font-normal pr-4 font-elmessiri leading-tight">
-                  Experience The Difference
+                  Experience The <span className="blink">Difference </span>
                   In Dental Care
                 </div>
 
@@ -21,18 +23,33 @@ export const OpenHrs = () => {
                     Hours
                   </h3>
                   <div className="text-white text-base md:text-xl font-normal font-nunito leading-relaxed">
-                    Mondays & Tuesdays: 7:00 AM to 5:00 PM.<br /><br />
-                    Wednesdays: 1:00 PM to 7:00 PM.<br /><br />
-                    Thursdays: 7:00 AM to 1:00 PM.<br /><br />
-                    Fridays (Per Month): 7:00 AM to 12:00 PM.<br /><br />
-                    Saturdays & Sundays: Closed.
+                    <FadeInComponent delay={0}>
+                      Mondays & Tuesdays: 7:00 AM to 5:00 PM.<br />
+                      <br />
+                    </FadeInComponent>
+                    <FadeInComponent delay={200}>
+                      Wednesdays: 1:00 PM to 7:00 PM.<br />
+                      <br />                    </FadeInComponent>
+                    <FadeInComponent delay={400}>
+                      Thursdays: 7:00 AM to 1:00 PM.<br /><br />
+                    </FadeInComponent>
+                    <FadeInComponent delay={600}>
+                      Fridays (Per Month): 7:00 AM to 12:00 PM.<br /><br />
+                    </FadeInComponent>
+                    <FadeInComponent delay={800}>
+                      Saturdays & Sundays: Closed.
+                    </FadeInComponent>
                   </div>
                 </div>
 
                 {/* Additional Info */}
                 <div className="text-white text-sm md:text-base font-normal font-nunito">
-                  Select holidays are open/closed. Call in to check our availability.
-                  Circumstantial emergency procedures may result in appointments outside of these times.
+                  <FadeInComponent delay={1000}>
+                    Select holidays are open/closed. Call in to check our availability.
+                  </FadeInComponent>
+                  <FadeInComponent delay={1200}>
+                    Circumstantial emergency procedures may result in appointments outside of these times.
+                  </FadeInComponent>
                 </div>
               </div>
             </div>
@@ -40,7 +57,7 @@ export const OpenHrs = () => {
             {/* Image Column */}
             <div className="w-full md:w-1/2 bg-[#0f6794] flex items-stretch">
               <img
-                className="w-auto max-h-full object-cover -mr-8 md:-mr-16"
+                className="w-auto max-h-full object-cover -mr-8 md:-mr-16 fade-in-right"
                 src={brightTeeth}
                 alt="bright-teeth"
               />

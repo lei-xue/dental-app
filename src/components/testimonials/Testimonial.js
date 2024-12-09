@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { TestimonialCard } from './TestimonialCard'
 import testimonialsData from './../../assets/data/Testimonials.json'
+import FadeInComponent from './../FadeInComponent';
 
 import JohnM from './../../assets/images/JohnM.png'
 import DiannaM from './../../assets/images/DiannaM.png'
@@ -38,7 +39,7 @@ export const Testimonial = () => {
                 <div className="text-[#0d4e6e] text-md font-semibold font-nunito tracking-wide mb-5">
                   Testimonials
                 </div>
-                <div className="text-[#090909] text-4xl md:text-5xl font-normal font-elmessiri leading-10 mb-7">
+                <div className="text-[#090909] text-4xl md:text-5xl font-normal font-elmessiri leading-10 mb-7 fade-in-right">
                   See What Others Have To Say
                 </div>
                 <p className="text-[#363636] text-lg md:text-2xl font-normal font-nunito max-w-3xl mx-auto">
@@ -47,13 +48,13 @@ export const Testimonial = () => {
               </div>
               <br />
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                {currentPageData.map((testimonial) => (
-                  <TestimonialCard
-                    key={testimonial.id}
-                    picture={imageMap[testimonial.picture.split('/').pop()]}
-                    name={testimonial.name}
-                    review={testimonial.review}
-                  />
+                {currentPageData.map((testimonial, index) => (
+                  <FadeInComponent key={testimonial.id} delay={index * 200}>
+                    <TestimonialCard
+                      picture={imageMap[testimonial.picture.split('/').pop()]}
+                      name={testimonial.name}
+                      review={testimonial.review}
+                    /></FadeInComponent>
                 ))}
               </div>
             </div>
