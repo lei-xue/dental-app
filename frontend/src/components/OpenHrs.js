@@ -1,5 +1,5 @@
 import React from 'react';
-import brightTeeth from './../assets/images/brightTeeth.png';
+import brightTeeth from '../assets/images/brightTeeth.png';
 import FadeInComponent from './FadeInComponent';
 
 export const OpenHrs = () => {

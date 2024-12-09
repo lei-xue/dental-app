@@ -1,5 +1,5 @@
 import React from 'react'
-import smileGirl from './../assets/images/smileGirl.png'
+import smileGirl from '../assets/images/smileGirl.png'
 import { ReactTyped } from 'react-typed';
 export const Intro = () => {
   const scrollToSection = (sectionId) => {

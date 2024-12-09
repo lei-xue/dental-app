@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { TestimonialCard } from './TestimonialCard'
-import testimonialsData from './../../assets/data/Testimonials.json'
-import FadeInComponent from './../FadeInComponent';
+import testimonialsData from '../../assets/data/Testimonials.json'
+import FadeInComponent from '../FadeInComponent';
 
-import JohnM from './../../assets/images/JohnM.png'
-import DiannaM from './../../assets/images/DiannaM.png'
-import ScottM from './../../assets/images/ScottM.png'
+import JohnM from '../../assets/images/JohnM.png'
+import DiannaM from '../../assets/images/DiannaM.png'
+import ScottM from '../../assets/images/ScottM.png'
 
 // Create an image map
 const imageMap = {

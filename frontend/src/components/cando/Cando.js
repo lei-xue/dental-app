@@ -1,13 +1,13 @@
 import React from 'react'
 import { CandoCard } from './CandoCard'
-import candoData from './../../assets/data/Cando.json'
+import candoData from '../../assets/data/Cando.json'
 import dentalFloss from '../../assets/images/dental-floss.svg'
 import restoration from '../../assets/images/restoration.svg';
 import denture from '../../assets/images/denture.svg';
 import implant from '../../assets/images/implant.svg';
 import emergency from '../../assets/images/emergency.svg';
 import toothHygiene from '../../assets/images/tooth-hygiene.svg';
-import FadeInComponent from './../FadeInComponent';
+import FadeInComponent from '../FadeInComponent';
 
 const images = {
   'dental-floss.svg': dentalFloss,

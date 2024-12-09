@@ -10,7 +10,6 @@ import { Testimonial } from './components/testimonials/Testimonial';
 import { OpenHrs } from './components/OpenHrs';
 import FadeInComponent from './components/FadeInComponent';
 
-
 function App() {
   useEffect(() => {
     document.title = "Somerville Dental";

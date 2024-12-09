@@ -1,6 +1,6 @@
 import React from 'react'
-import Paul from './../assets/images/Paul.png'
-import Deanna from './../assets/images/Deanna.png'
+import Paul from '../assets/images/Paul.png'
+import Deanna from '../assets/images/Deanna.png'
 import FadeInComponent from './FadeInComponent';
 
 

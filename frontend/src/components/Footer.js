@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-
+import React from "react";
+import { SubscribeButton } from "./SubscribeButton";
 
 export const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const handleScrollToSection = (event, sectionId) => {
     event.preventDefault();
@@ -13,40 +11,6 @@ export const Footer = () => {
     }
   };
 
-  const handleSubscribe = async () => {
-    if (!email) {
-      alert("Please enter a valid email address");
-      return;
-    }
-    setLoading(true);
-    try {
-      const googleFormURL = process.env.REACT_APP_GOOGLE_FORM_URL;
-      const emailFieldID = process.env.REACT_APP_GOOGLE_FORM_EMAIL_FIELD_ID;
-      if (!googleFormURL || !emailFieldID) {
-        throw new Error("Google Form URL or Field ID is not defined in environment variables.");
-      }
-
-
-      const formData = new URLSearchParams();
-      formData.append(emailFieldID, email);
-      const response = await fetch(googleFormURL, {
-        method: "POST",
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      alert("Subscription successful!");
-    } catch (error) {
-      console.error("Subscription error:", error);
-      alert("Failed to subscribe. Please try again.");
-    } finally {
-      setLoading(false);
-      setEmail("");
-    }
-  };
 
   return (
     <div className="w-full bg-[#0d4e6e]">
@@ -77,32 +41,7 @@ export const Footer = () => {
               <div className="text-white text-base font-normal font-nunito">
                 Join our newsletter to stay up to date on features and releases.
               </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="grow h-12 p-3 rounded-[5px] border border-white text-white text-base font-normal font-nunito bg-transparent"
-                  />
-                  <div
-                    className="h-12 px-6 py-3 bg-white rounded-[5px] border border-white flex justify-center items-center hover:scale-105"
-                    onClick={handleSubscribe}
-                  >
-                    <button
-                      className="text-[#005963] text-base font-normal font-nunito"
-                      disabled={loading}
-                    >
-                      {loading ? "Subscribing..." : "Subscribe"}
-                    </button>
-                  </div>
-                </div>
-                <div className="text-white text-base font-normal font-nunito">
-                  By subscribing you agree to our Privacy Policy and consent to
-                  receive updates from our company.
-                </div>
-              </div>
+              <SubscribeButton />
             </div>
 
             {/* Links and Social Section */}
