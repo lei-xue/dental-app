@@ -2,6 +2,7 @@ import React from 'react'
 import smileGirl from '../assets/images/smileGirl.png'
 import { ReactTyped } from 'react-typed';
 export const Intro = () => {
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -50,10 +51,10 @@ export const Intro = () => {
 
               {/* Button group */}
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 w-full sm:w-auto">
-                <button className="px-7 py-3.5 bg-[#0d4e6e] rounded-lg text-white text-base font-semibold font-nunito transition-colors hover:bg-[#0a3d56] hover:scale-105 hover:font-extrabold">
+                <button onClick={() => scrollToSection('contact')} className="px-7 py-3.5 bg-[#0d4e6e] rounded-lg text-white text-base font-semibold font-nunito transition-colors hover:bg-[#0a3d56] hover:scale-105 hover:font-extrabold">
                   Plan Your Visit
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="px-7 py-3.5 rounded-lg border border-[#0d4e6e] text-[#0d4e6e] text-base font-semibold font-nunito hover:bg-[#f5f5f5]  hover:scale-105 transition-colors hover:font-extrabold">
+                <button onClick={() => scrollToSection('services')} className="px-7 py-3.5 rounded-lg border border-[#0d4e6e] text-[#0d4e6e] text-base font-semibold font-nunito hover:bg-[#f5f5f5]  hover:scale-105 transition-colors hover:font-extrabold">
                   Check Our Services
                 </button>
               </div>

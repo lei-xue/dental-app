@@ -66,23 +66,23 @@
 @keyframes colorChange {
   0% {
     color: grey;
-    transform: scale(1);
+    font-weight: normal;
   }
 
   50% {
     color: white;
-    transform: scale(1);
+    font-weight: normal;
   }
 
   100% {
     color: #ff5722;
-    transform: scale(1.1);
-
+    font-weight: bold;
   }
 }
 
 .blink {
-  animation: colorChange 3s infinite;
+  animation: colorChange 2s infinite;
+
 }
 
 @keyframes fadeInFromRight {

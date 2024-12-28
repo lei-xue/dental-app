@@ -39,7 +39,7 @@ export const Cando = () => {
                   What Can We Do?
                 </div>
                 <p className="text-[#363636] text-lg md:text-2xl font-normal font-nunito max-w-3xl mx-auto mb-8">
-                  Contact us for more details and specifications. Don't see what you're looking for? Just ask us!
+                  Contact us for more details and specifications. Don't see what you're looking for ? Just ask us!
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

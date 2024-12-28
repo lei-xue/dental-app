@@ -9,7 +9,6 @@ export const SubscribeButton = () => {
     event.preventDefault();
     const email = event.target.email.value;
     setIsLoading(true);
-    console.log(email);
     try {
       const response = await fetch(process.env.REACT_APP_GOOGLE_FORM_URL, {
         redirect: 'follow',
@@ -21,7 +20,6 @@ export const SubscribeButton = () => {
       });
 
       const result = await response.json();
-      console.log(result);
 
       if (result.result === 'success') {
         setShowModal(true);
@@ -31,7 +29,6 @@ export const SubscribeButton = () => {
         setErrorMessage(result.error || 'Subscription failed, please try again later.');
       }
     } catch (error) {
-      console.error('Error:', error);
       setErrorMessage('Network error, please try again later.');
     } finally {
       setIsLoading(false); // End loading
@@ -74,19 +71,22 @@ export const SubscribeButton = () => {
       </form>
 
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60">
           <div className="bg-white rounded-lg p-6 max-w-sm w-full">
-            <h2 className="text-xl font-semibold mb-4">Subscription Successful!</h2>
-            <p className="mb-4">Thank you for subscribing! We will send the latest updates to your email.</p>
+            <h2 className="text-2xl font-bold mb-4 font-elmessiri text-[#0d4e6e]">Subscription Successful!</h2>
+            <p className="mb-4 font-nunito">Thank you for subscribing!
+              <br />
+              We will send the latest updates to your email.</p>
             <button
               onClick={closeModal}
-              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              className="mt-2 px-4 py-2 bg-[#0d4e6e] text-white rounded hover:bg-[#0a3d56] hover:scale-105"
             >
               Close
             </button>
           </div>
         </div>
       )}
+
     </>
   );
 };
