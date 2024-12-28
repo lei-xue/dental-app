@@ -9,14 +9,15 @@ export const SubscribeButton = () => {
     event.preventDefault();
     const email = event.target.email.value;
     setIsLoading(true);
-
+    console.log(email);
     try {
-      const response = await fetch(process.env.REACT_APP_BACKEND_URL, {
+      const response = await fetch(process.env.REACT_APP_GOOGLE_FORM_URL, {
+        redirect: 'follow',
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain;charset=utf-8',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email: email }),
       });
 
       const result = await response.json();
