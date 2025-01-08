@@ -6,12 +6,19 @@ import FadeInComponent from '../FadeInComponent';
 import JohnM from '../../assets/images/JohnM.png'
 import DiannaM from '../../assets/images/DiannaM.png'
 import ScottM from '../../assets/images/ScottM.png'
+import BrittanyC from '../../assets/images/BrittanyC.png'
+import MackQ from '../../assets/images/MackQ.png'
+import DaveM from '../../assets/images/DaveM.png'
 
 // Create an image map
 const imageMap = {
   'JohnM.png': JohnM,
   'DiannaM.png': DiannaM,
   'ScottM.png': ScottM,
+  'MackQ.png': MackQ,
+  'DaveM.png': DaveM,
+  'BrittanyC.png': BrittanyC,
+
 }
 
 export const Testimonial = () => {
